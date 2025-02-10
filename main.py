@@ -46,6 +46,8 @@ def get_text_messages(message):
         bot.send_message(user_id, "Выберете группу:", reply_markup=markup)
     elif message.text == "/help":
         bot.send_message(user_id, "Я умею выводить пары на день. Напиши /leson.")
+    elif message.text == "/start":
+        bot.send_message(user_id, "Я тебя не понимаю. Напиши /help.")
     else:
         bot.send_message(user_id, "Я тебя не понимаю. Напиши /help.")
 
